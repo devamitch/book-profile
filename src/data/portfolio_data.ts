@@ -1,0 +1,566 @@
+import type {
+  BlogPost,
+  Education,
+  Experience,
+  Project,
+  SkillCategory,
+  Stat,
+  StoryBeat,
+  Testimonial,
+} from "../types";
+
+export const PROFILE = {
+  nameFirst: "Amit",
+  nameLast: "Chakraborty",
+  tagline: "Eight years. Eighteen apps. No shortcuts.",
+  subtitle: "Principal Architect & Founding Engineer",
+  subRoles: "Mobile · AI/ML · Web3 · Full-Stack",
+  manifesto: [
+    "Before AI could write a line of code, I was building production systems.",
+    "18+ apps shipped. 50K+ real users. Zero outsourced decisions.",
+    "I architect systems that outlast the hype.",
+  ],
+  roles: [
+    "VP Engineering",
+    "Principal Architect",
+    "CTO",
+    "Technical Lead",
+    "0→1 Builder",
+  ],
+  location: "Kolkata, India",
+  timezone: "IST (UTC+5:30)",
+  email: "amit98ch@gmail.com",
+  phone: "+91-9874173663",
+  github: "https://github.com/devamitch",
+  githubAlt: "https://github.com/techamit95ch",
+  linkedin: "https://linkedin.com/in/devamitch",
+  twitter: "https://x.com/devamitch",
+  medium: "https://devamitch.medium.com/",
+  website: "https://devamit.co.in",
+  availability:
+    "Open for high-impact global collaborations and contract roles.",
+  summary: `Principal Architect with 8+ years engineering 0-to-1 production systems across React Native, AI/ML, and Web3. Specialist in taking early-stage startups from concept to funded production — including proprietary game engines, HIPAA-compliant RAG pipelines, custom prompt-engineered AI assistants (Aura AI), and high-value dApps. Led teams of 21+, shipped 18+ production apps across HealthTech, FinTech, GovTech, and Gaming. Every system I architect ships to production.`,
+  ethos: {
+    badge: "FOUNDER MINDSET",
+    status: "Always On",
+    story: `I give everything to the craft. Day and night. I build entire technical universes from nothing—architectures, AI pipelines, game engines, and the teams that run them. A single title or past company doesn't capture who I am. What defines me is my resilience, my behavior under pressure, and my absolute refusal to ship mediocre work.`,
+    principles: [
+      {
+        label: "Skin in the Game",
+        detail:
+          "I treat your product like it's my own company. I fight till the end to ensure the architecture survives reality.",
+      },
+      {
+        label: "Tackling the Critical",
+        detail:
+          "When things break, I step in. I solve the blockers that make other engineers quit.",
+      },
+      {
+        label: "Building the Team",
+        detail:
+          "I don't just write code. I mentor, train, and instill strict engineering discipline in the teams I lead.",
+      },
+      {
+        label: "Zero-to-One Focus",
+        detail:
+          "Taking raw visions and turning them into scalable, robust technical realities from absolute zero.",
+      },
+    ],
+  },
+} as const;
+
+export const STATS: Stat[] = [
+  { value: "8+", label: "Years in Production" },
+  { value: "18+", label: "Apps Shipped" },
+  { value: "50K+", label: "Daily Active Users" },
+  { value: "21", label: "Engineers Led" },
+];
+
+export const EXPERIENCE: Experience[] = [
+  {
+    id: "synapsis",
+    company: "Synapsis Medical Technologies",
+    role: "Principal Mobile Architect & Technical Lead",
+    location: "Edmonton, Canada (Remote) · Contract · Founding Engineer",
+    period: "Jan 2025 — Feb 2026",
+    type: "HealthTech AI Startup",
+    color: "#E8771A",
+    highlights: [
+      "Executed complete 0-to-1 build: React Native, Next.js, NestJS, AWS — concept to funded production across 5 apps (iOS, Android, Web, AI, Desktop)",
+      "Built proprietary bridgeless game engine from scratch (C++/Swift/Kotlin) — zero external dependencies; LLM-based dynamic task generation with XP progression",
+      "Designed HIPAA-compliant RAG pipelines (99.9% uptime) and custom AI assistant (Aura AI) for clinical workflows",
+      "Integrated MediaPipe computer vision for real-time retina analysis and luminance tracking on mobile consumer hardware",
+      "Recruited, trained, and led a 21-person engineering team; established CI/CD infrastructure (Fastlane, GitHub Actions)",
+    ],
+    tech: [
+      "React Native",
+      "Next.js",
+      "NestJS",
+      "AWS",
+      "TensorFlow",
+      "MediaPipe",
+      "RAG",
+      "Kubernetes",
+      "C++/Swift/Kotlin",
+      "Pinecone",
+    ],
+  },
+  {
+    id: "nonceblox",
+    company: "NonceBlox Pvt. Ltd.",
+    role: "Lead Mobile Architect & Senior Full-Stack",
+    location: "Dubai (Remote) · Full-Time · 3+ Years",
+    period: "Oct 2021 — Jan 2025",
+    type: "FinTech / Web3 / Gaming",
+    color: "#C9A84C",
+    highlights: [
+      "Shipped 13+ production apps across FinTech, Web3, and Gaming — 50K+ active users at peak",
+      "Architected Web3/DeFi dApps (Memr, DeFi11) using Solidity, Web3.js, WalletConnect",
+      "Delivered high-performance React Native apps at 60fps using Reanimated and native C++ modules",
+      "Implemented complex payment systems (Stripe, PayPal, Razorpay, Binance Pay, Crypto on-ramps)",
+      "Led hiring, mentorship, and stakeholder communication across the full 3-year tenure",
+    ],
+    tech: [
+      "React Native",
+      "Solidity",
+      "Web3.js",
+      "TypeScript",
+      "Node.js",
+      "GraphQL",
+      "Reanimated",
+      "C++",
+      "Ethereum",
+    ],
+  },
+  {
+    id: "early",
+    company: "TechProMind & WebSkitters",
+    role: "Senior Full-Stack Engineer",
+    location: "Kolkata, India · Full-Time · GovTech / Enterprise",
+    period: "May 2017 — Oct 2021",
+    type: "GovTech / Enterprise · 4+ Years",
+    color: "#DAA520",
+    highlights: [
+      "Secured 13+ government projects with SQL injection/XSS hardening — enterprise-grade security",
+      "Designed GST Merchant Portal & Retailer Software from scratch",
+      "Migrated legacy PHP to Angular/REST; improved system efficiency by 40%",
+      "Designed Oracle/MySQL data pipelines for government-scale processing",
+    ],
+    tech: ["PHP", "Angular", "MySQL", "Oracle", "React.js", "Node.js", "REST"],
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    id: "vitalquest",
+    name: "VitalQuest AI",
+    badge: "FLAGSHIP · HEALTHTECH",
+    tagline: "A game engine I built from nothing.",
+    desc: "Proprietary game engine built from absolute scratch — zero dependencies, zero shortcuts. LLM-based dynamic health task generation, XP progression system, RAG pipeline for HIPAA-compliant medical context. Aura AI custom assistant for clinical workflows.",
+    tech: [
+      "React Native",
+      "C++/Swift/Kotlin",
+      "LLMs",
+      "RAG Pipelines",
+      "MediaPipe",
+      "HIPAA",
+    ],
+    color: "#E8771A",
+    featured: true,
+    impact: [
+      "Proprietary game engine — zero external deps",
+      "LLM task generation at runtime",
+      "RAG pipeline for HIPAA-compliant medical data",
+      "Computer vision retina analysis",
+      "21-person team recruited & trained",
+    ],
+  },
+  {
+    id: "nexus",
+    name: "Nexus Marketing AI",
+    badge: "AI PLATFORM",
+    tagline: "One brain for all marketing channels.",
+    desc: "Enterprise AI orchestration platform unifying Meta, TikTok, Shopify and 5+ marketing channels. Autonomous campaign analysis, real-time cross-platform optimization, agentic decision-making.",
+    tech: [
+      "Next.js",
+      "Agentic AI",
+      "Multi-channel",
+      "Real-time Analytics",
+      "NestJS",
+    ],
+    color: "#C9A84C",
+    featured: true,
+    impact: [
+      "5+ platforms unified into one AI brain",
+      "Autonomous campaign recommendations",
+      "Real-time cross-channel analytics",
+    ],
+  },
+  {
+    id: "lunacare",
+    name: "LunaCare Wellness",
+    badge: "WOMEN'S HEALTH",
+    tagline: "Wellness that finally understands women.",
+    desc: "Privacy-first women's health ecosystem. Local-first storage, AI-driven wellness algorithms, adaptive meditation engine, cycle tracking, mood journaling. Zero third-party data.",
+    tech: [
+      "React Native",
+      "AI/ML",
+      "Encrypted Storage",
+      "Health APIs",
+      "Node.js",
+    ],
+    color: "#D4A5C5",
+    featured: true,
+    impact: [
+      "Personalised cycle + mood + sleep tracking",
+      "AI wellness recommendations engine",
+      "Privacy-first — zero third-party data sells",
+    ],
+  },
+  {
+    id: "vulcan",
+    name: "Vulcan Eleven",
+    badge: "SPORTS · FINTECH",
+    tagline: "50,000 users. Zero downtime.",
+    desc: "Fantasy sports platform with 60fps performance. 50K+ users, Razorpay + Binance Pay dual-payment, 35% transaction growth. Post-merger redesign led from front to back.",
+    tech: [
+      "React Native",
+      "Reanimated",
+      "C++",
+      "Razorpay",
+      "Binance Pay",
+      "Blockchain",
+    ],
+    color: "#FF6B35",
+    link: "https://apps.apple.com/app/vulcan-eleven/id6462420052",
+    impact: [
+      "50K+ active users",
+      "35% transaction growth",
+      "Binance Pay + Razorpay integration",
+    ],
+  },
+  {
+    id: "housezy",
+    name: "Housezy",
+    badge: "PROPTECH",
+    tagline: "Housing automation, reimagined.",
+    desc: "Subscription-based housing automation platform with automated billing & service tracking. Complex payment gateways, GraphQL APIs, Socket.io real-time notifications.",
+    tech: [
+      "Expo Router",
+      "GraphQL",
+      "Socket.io",
+      "PayU",
+      "Google Pay",
+      "CI/CD",
+    ],
+    color: "#00B4A0",
+    link: "https://apps.apple.com/us/app/housezy/id6471949955",
+    impact: [
+      "Subscription billing layer",
+      "Real-time notifications",
+      "PayU + Google Pay integration",
+    ],
+  },
+  {
+    id: "defi11",
+    name: "DeFi11",
+    badge: "DEFI · WEB3",
+    tagline: "Fully on-chain. No compromise.",
+    desc: "Fully decentralized fantasy sports. Smart contract prize pools, on-chain tournament logic, NFT marketplace on Ethereum. Zero-trust design.",
+    tech: ["Solidity", "Web3.js", "NFTs", "Smart Contracts", "Ethereum"],
+    color: "#C9A84C",
+    link: "https://apps.apple.com/app/defi11-fantasy-sports-app/id1608967244",
+    impact: [
+      "100% on-chain prize pools",
+      "Smart contract architecture",
+      "Zero-trust design",
+    ],
+  },
+  {
+    id: "musicx",
+    name: "MusicX",
+    badge: "WEB3 · MUSIC",
+    tagline: "Blockchain royalties for artists.",
+    desc: "Music competition platform with blockchain-backed royalties. Native C++ Modules, 60fps animations, Twitter + Spotify API integration, NFT reward system.",
+    tech: ["React Native", "Blockchain", "Native C++", "Spotify API", "NFT"],
+    color: "#9B5DE5",
+    link: "https://apps.apple.com/us/app/music-x/id6475713772",
+    impact: [
+      "Blockchain royalty system",
+      "C++ native modules",
+      "60fps animations",
+    ],
+  },
+  {
+    id: "be4you",
+    name: "Be4You",
+    badge: "SOCIAL · DATING",
+    tagline: "Full MVP. Built for seed funding.",
+    desc: "Full dating app MVP: real-time chat via Socket.io, Zoom-style video calls, live geolocation, social + Apple auth. Delivered in under 90 days.",
+    tech: ["WebRTC", "Socket.io", "Reanimated", "Video", "Node.js"],
+    color: "#F15BB5",
+    impact: [
+      "Full MVP for seed round",
+      "Real-time video + chat + location",
+      "90-day delivery",
+    ],
+  },
+  {
+    id: "prolandly",
+    name: "ProLandly",
+    badge: "SOCIAL IMPACT",
+    tagline: "Technology that honors culture.",
+    desc: "Platform for Canadian Indigenous communities — cultural preservation, community development, and economic empowerment.",
+    tech: [
+      "React Native",
+      "Community Platform",
+      "Cultural Tech",
+      "Mobile-First",
+    ],
+    color: "#FF9800",
+    impact: [
+      "Cultural preservation through technology",
+      "Economic empowerment layer",
+      "Community-first mobile platform",
+    ],
+  },
+  {
+    id: "cryptocoffee",
+    name: "CryptoCoffeeTales",
+    badge: "WEB3 · NEWS",
+    tagline: "Blockchain news meets community.",
+    desc: "Blockchain news & crypto price tracking app with wallet integration & community features. Smooth animations with Lottie & Moti.",
+    tech: [
+      "TypeScript",
+      "Lottie",
+      "Moti",
+      "Wallet Integration",
+      "React Native",
+    ],
+    color: "#6366F1",
+    impact: [
+      "Real-time crypto prices",
+      "Wallet integration",
+      "Community features",
+    ],
+  },
+];
+
+export const SKILLS: SkillCategory[] = [
+  {
+    cat: "Mobile",
+    color: "#E8771A",
+    items: [
+      "React Native (Expert, Bridgeless)",
+      "Expo",
+      "TypeScript",
+      "Native Modules (C++/Swift/Kotlin)",
+      "Reanimated",
+      "iOS & Android",
+    ],
+  },
+  {
+    cat: "AI & ML",
+    color: "#C9A84C",
+    items: [
+      "Custom Prompt-Engineered AI (Aura AI)",
+      "RAG Pipelines",
+      "Agentic AI",
+      "LLM Integration (OpenAI/Claude)",
+      "Computer Vision (MediaPipe)",
+      "TensorFlow",
+    ],
+  },
+  {
+    cat: "Blockchain",
+    color: "#DAA520",
+    items: [
+      "Solana (Rust/Anchor)",
+      "Ethereum (Solidity)",
+      "Web3.js / Ethers.js / Viem",
+      "WalletConnect / Wagmi",
+      "Smart Contracts",
+      "DeFi & NFTs",
+    ],
+  },
+  {
+    cat: "Backend & Cloud",
+    color: "#D4A5C5",
+    items: [
+      "NestJS / Node.js / Django",
+      "GraphQL / REST",
+      "PostgreSQL / MongoDB / Redis",
+      "AWS (Lambda, S3, Amplify, EC2)",
+      "Docker & Kubernetes",
+      "CI/CD (Fastlane, GitHub Actions)",
+    ],
+  },
+  {
+    cat: "Frontend",
+    color: "#87CEEB",
+    items: [
+      "React.js / Next.js 15",
+      "Redux / Zustand",
+      "Framer Motion / GSAP",
+      "Tailwind CSS / MUI",
+      "Electron",
+      "TypeScript",
+    ],
+  },
+  {
+    cat: "Payments",
+    color: "#90EE90",
+    items: [
+      "Stripe / PayPal",
+      "Razorpay",
+      "Binance Pay",
+      "Google Pay / PayU",
+      "Crypto on-ramps",
+      "Subscription Billing",
+    ],
+  },
+  {
+    cat: "Leadership",
+    color: "#FFB347",
+    items: [
+      "Team Building (21+)",
+      "Technical Mentorship",
+      "Agile/Scrum",
+      "Stakeholder Management",
+      "0-to-1 Architecture",
+      "VP-Level Operations",
+    ],
+  },
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    name: "Kartik Kalia",
+    role: "Full Stack Developer · AWS",
+    company: "NonceBlox",
+    text: "I had the pleasure of working with Amit for three years and witnessed his impressive growth from Front-End Developer to Front-End Lead. His expertise and dedication make him a valuable asset to any team.",
+    li: "https://linkedin.com/in/kartikkalia/",
+  },
+  {
+    name: "Neha Goel",
+    role: "HR Professional · 15+ Years",
+    company: "NonceBlox",
+    text: "Amit had been an amicable and diligent developer, one of the most dependable Engineers when it comes to delivery or urgent closures. His capability to rebuild any project from scratch is remarkable.",
+    li: "https://linkedin.com/in/neha-goel/",
+  },
+  {
+    name: "Varun Chodha",
+    role: "Senior Full-Stack · MERN",
+    company: "NonceBlox",
+    text: "Amit played a pivotal role in mentoring me, sharing his profound knowledge of Redux, React Native, and frontend concepts. His enthusiasm for coding and pursuit for perfection are truly inspiring.",
+    li: "https://linkedin.com/in/varun-chodha/",
+  },
+];
+
+export const BLOGS: BlogPost[] = [
+  {
+    title: "Say Goodbye to Git Woes: Become a Git Wizard Today!",
+    cat: "DevOps / Git",
+    color: "#E8771A",
+    date: "Jan 17, 2025",
+    teaser:
+      "Git is a superpower. Whether you're a beginner or experienced developer, mastering Git will transform your workflow and collaboration.",
+    link: "https://devamitch.medium.com/say-goodbye-to-git-woes-become-a-git-wizard-today-c6f6e7c10b7a",
+  },
+  {
+    title: "React Native Bridgeless Architecture: What They Don't Tell You",
+    cat: "Mobile Architecture",
+    color: "#C9A84C",
+    date: "Nov 2024",
+    teaser:
+      "The new architecture changes everything. Here's what actually breaks in production and how to fix it before your users notice.",
+    link: "https://devamitch.medium.com/",
+  },
+  {
+    title: "Building RAG Pipelines for Medical Data: A HIPAA-Safe Approach",
+    cat: "AI + HealthTech",
+    color: "#DAA520",
+    date: "Nov 2024",
+    teaser:
+      "How we built retrieval pipelines for sensitive medical data without violating compliance — lessons from a real HealthTech build.",
+    link: "https://devamitch.medium.com/",
+  },
+  {
+    title: "From TypeScript to Rust & Go — Day 3: Mastering Functions",
+    cat: "Rust & Go",
+    color: "#D4A5C5",
+    date: "Nov 23, 2024",
+    teaser:
+      "Writing reusable functions and handling errors in Rust and Go. Each concept introduced step-by-step in plain English.",
+    link: "https://devamitch.medium.com/",
+  },
+  {
+    title: "Expo vs. Bare React Native: Which Should You Use and When?",
+    cat: "Mobile / React Native",
+    color: "#87CEEB",
+    date: "Oct 25, 2024",
+    teaser:
+      "A practical guide to choosing between Expo's managed workflow and Bare React Native for your next project.",
+    link: "https://devamitch.medium.com/",
+  },
+];
+
+export const EDUCATION: Education[] = [
+  {
+    degree: "MCA",
+    school: "Techno Main Salt Lake, Kolkata",
+    period: "2018–2021",
+    gpa: "8.61 CGPA",
+  },
+  {
+    degree: "BCA",
+    school: "The Heritage Academy, Kolkata",
+    period: "2014–2017",
+    gpa: "",
+  },
+];
+
+export const STORY: StoryBeat[] = [
+  {
+    yr: "2017",
+    title: "The Origin",
+    color: "#E8771A",
+    icon: "◈",
+    text: "PHP developer. Government projects. 13 secured, restructured, and shipped. Built GST portals, Android apps, and retailer software from zero.",
+  },
+  {
+    yr: "2019",
+    title: "MCA & The Leap",
+    color: "#C9A84C",
+    icon: "◉",
+    text: "Master's in Computer Applications. 8.61 CGPA. React, React Native, Web3 foundations, and freelance projects running in parallel.",
+  },
+  {
+    yr: "2021",
+    title: "Web3 & Blockchain",
+    color: "#DAA520",
+    icon: "◆",
+    text: "Joined NonceBlox. Deep-dived into Solidity, DeFi, NFTs. Built DeFi11 — fully decentralized fantasy sports. Shipped 13+ apps over 3 years.",
+  },
+  {
+    yr: "2023",
+    title: "The Lead Role",
+    color: "#B8860B",
+    icon: "●",
+    text: "Lead Mobile Developer. Owned architecture for MusicX, Housezy, Vulcan Eleven. 50,000+ real users. Razorpay + Binance Pay. C++ Native Modules.",
+  },
+  {
+    yr: "2025",
+    title: "AI + HealthTech",
+    color: "#E8771A",
+    icon: "◈",
+    text: "Proprietary game engine from scratch. RAG pipelines for HIPAA-compliant medical data. Aura AI. Women's health platform at scale. VP-level operations.",
+  },
+  {
+    yr: "Now",
+    title: "The Next Chapter",
+    color: "#C9A84C",
+    icon: "→",
+    text: "VP Engineering. CTO. Principal Architect. The title matters less than the mission. Building systems that scale and turning technical vision into business outcomes.",
+  },
+];

@@ -1,0 +1,54 @@
+.page-turn-container {
+  position: absolute;
+  top: 0;
+  width: var(--page-w);
+  height: var(--page-h);
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.page-segment {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  background-size: var(--page-w) var(--page-h);
+  background-repeat: no-repeat;
+}
+
+.segment-front {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  background-image: var(--paper-2);
+  background-size: var(--page-w) var(--page-h);
+  background-position: inherit;
+  box-shadow: inset rgba(255, 255, 255, 0.2) 0px -1px 0 0;
+}
+
+.segment-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-image: var(--paper-2);
+  background-size: var(--page-w) var(--page-h);
+  background-position: inherit;
+  box-shadow: inset rgba(0, 0, 0, 0.1) 0px -1px 0 0;
+}
+
+/* Lighting for the bend */
+.page-segment > .segment-front::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
+  pointer-events: none;
+}
+
+/* We need to apply the specific background position to the front/back faces */
+.page-segment .segment-front,
+.page-segment .segment-back {
+  background-position: inherit;
+}
