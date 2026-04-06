@@ -79,7 +79,7 @@ export const STATS: Stat[] = [
 export const EXPERIENCE: Experience[] = [
   {
     id: "synapsis",
-    company: "Synapsis Medical Technologies",
+    company: "Independent Studio",
     role: "Principal Mobile Architect & Technical Lead",
     location: "Edmonton, Canada (Remote) · Contract · Founding Engineer",
     period: "Jan 2025 — Feb 2026",
@@ -153,7 +153,7 @@ export const EXPERIENCE: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: "vitalquest",
-    name: "VitalQuest AI",
+    name: "Aura Studio",
     badge: "FLAGSHIP · HEALTHTECH",
     tagline: "A game engine I built from nothing.",
     desc: "Proprietary game engine built from absolute scratch — zero dependencies, zero shortcuts. LLM-based dynamic health task generation, XP progression system, RAG pipeline for HIPAA-compliant medical context. Aura AI custom assistant for clinical workflows.",

@@ -4,7 +4,7 @@ import { ChapterHeader, LotusGeo, OrnamentalRule, SriYantra } from './Sacred'
 
 const [synapsis, nonceblox, early] = EXPERIENCE
 
-// ─── Spread 1: Chapter I opener + Synapsis ───────────────────────
+// ─── Spread 1: Chapter I opener + Independent Studio ───────────────────────
 export function Exp1L() {
   return (
     <div className="page-content">
@@ -47,7 +47,7 @@ export function Exp1R() {
     <div className="page-content">
       <LotusGeo size={80} opacity={0.05} style={{ top: 24, right: 16 }} />
 
-      <div className="running-head"><span>Synapsis Medical</span><span>6</span></div>
+      <div className="running-head"><span>Independent Studio</span><span>6</span></div>
 
       <div className="exp-block">
         <div className="exp-header-bar">
@@ -78,7 +78,7 @@ export function Exp1R() {
         I was not just a developer. I was the architect, the recruiter,
         the mentor, the foundation. The code ships. The systems run.
         That stands.
-        <cite>Amit, on Synapsis</cite>
+        <cite>Amit, on Independent Studio</cite>
       </div>
 
       <div className="page-num">6</div>

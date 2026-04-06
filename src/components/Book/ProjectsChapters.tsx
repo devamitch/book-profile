@@ -4,7 +4,7 @@ import { PROJECTS } from "../../data/portfolio_data";
 import ChapterPage from "./ChapterPage";
 
 export function ProjectsL() {
-  const featured = PROJECTS.slice(0, 1); // VitalQuest
+  const featured = PROJECTS.slice(0, 1); // Aura Studio
 
   return (
     <ChapterPage

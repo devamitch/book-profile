@@ -28,7 +28,7 @@ function ProjCard({ p }: { p: typeof PROJECTS[0] }) {
   )
 }
 
-// ─── Spread 1: Chapter II opener + VitalQuest ────────────────────
+// ─── Spread 1: Chapter II opener + Aura Studio ────────────────────
 export function Proj1L() {
   return (
     <div className="page-content">
@@ -70,7 +70,7 @@ export function Proj1R() {
       <LotusGeo size={80} opacity={0.05} style={{ top: 20, right: 14 }} />
       <div className="running-head"><span>Flagship Projects</span><span>12</span></div>
 
-      <div className="sec-label">VitalQuest AI · Principal Architect</div>
+      <div className="sec-label">Aura Studio · Principal Architect</div>
 
       <ProjCard p={PROJECTS[0]} />
 

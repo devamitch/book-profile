@@ -33,10 +33,10 @@ const SPREADS: SpreadPair[] = [
   [CoverLeft, CoverRight], // 0  Cover + TOC
   [Foreword1L, Foreword1R], // 1  About opener + Stats
   [Foreword2L, Foreword2R], // 2  Story timeline + Principles
-  [Exp1L, Exp1R], // 3  Chapter I + Synapsis
+  [Exp1L, Exp1R], // 3  Chapter I + Independent Studio
   [Exp2L, Exp2R], // 4  NonceBlox full
   [Exp3L, Exp3R], // 5  Early career + certifications
-  [Proj1L, Proj1R], // 6  Chapter II + VitalQuest + Nexus
+  [Proj1L, Proj1R], // 6  Chapter II + Aura Studio + Nexus
   [Proj2L, Proj2R], // 7  LunaCare + Vulcan + Housezy
   [Proj3L, Proj3R], // 8  DeFi11 + MusicX + Be4You + more
   [Skills1L, Skills1R], // 9  Chapter III + Mobile + AI
