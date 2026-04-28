@@ -13,6 +13,8 @@ export default defineConfig({
     },
   },
   server: {
+    host: "::",
+    port: 8080,
     fs: {
       allow: [".", "/tmp/fix-modules/node_modules"],
     },
