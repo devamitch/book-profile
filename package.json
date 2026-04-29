@@ -1,5 +1,5 @@
 {
-  "name": "amit-chakraborty-book-portfolio",
+  "name": "book-portfolio",
   "version": "2.0.0",
   "private": true,
   "type": "module",
@@ -25,7 +25,7 @@
     "@types/three": "^0.168.0",
     "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.5.3",
-    "vite": "^5.4.8",
+    "vite": "^6.2.5",
     "wrangler": "^4.86.0"
   }
 }
